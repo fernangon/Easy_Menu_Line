@@ -1,0 +1,159 @@
+
+body {
+    display: grid;
+    place-items: center;
+
+    min-height: 100vh;
+
+    margin: 0;
+    
+    font-family: monospace;
+    font-size: 15px;
+
+    background: #161122;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    margin: 0 0 1.5em 0; /* top right bottom left */
+    padding: 0;
+
+    list-style: none;
+}
+
+
+nav {
+    margin: 0 auto;
+
+    width: 510px;
+}
+
+
+nav ul {
+    display: flex;
+
+    padding: 0 5px;
+
+    border-radius: 5px;
+}
+
+
+nav ul li a {
+    display: block;
+
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    padding: 0 11px;
+
+    color: white;
+}
+
+nav ul li a:hover {
+    background: #0d0d0d;
+
+    color: lime;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Dibuja la raya azul por encima del texto Deployment. Pero la pone oculta. */
+.blue::before {
+    content: "";
+
+    display: block;
+
+    height: 3px;
+
+    opacity: 0; /* Transparente = Oculta. */ 
+
+    background-color: orange;
+}
+
+.blue:hover::before {
+    opacity: 1; /* Vista normal = Se ve. */ 
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+/* Todos los demás elementos igual: */
+
+
+.green::before {
+    content: "";
+
+    display: block;
+
+    height: 3px;
+
+    opacity: 0; /* Transparente = Oculta. */ 
+
+    background-color: yellow;
+}
+
+.green:hover::before {
+    opacity: 1; /* Vista normal = Se ve. */ 
+}
+
+
+
+.orange::before {
+    content: "";
+
+    display: block;
+
+    height: 3px;
+
+    opacity: 0; /* Transparente = Oculta. */ 
+
+    background-color: blueviolet;
+}
+
+.orange:hover::before {
+    opacity: 1; /* Vista normal = Se ve. */ 
+}
+
+
+.pink::before {
+    content: "";
+
+    display: block;
+
+    height: 3px;
+
+    opacity: 0; /* Transparente = Oculta. */ 
+
+    background-color: white;
+}
+
+.pink:hover::before {
+    opacity: 1; /* Vista normal = Se ve. */ 
+}
+
+
+
+.yellow::before {
+    content: "";
+
+    display: block;
+
+    height: 3px;
+
+    opacity: 0; /* Transparente = Oculta. */ 
+
+    background-color:tomato;
+}
+
+.yellow:hover::before {
+    opacity: 1; /* Vista normal = Se ve. */ 
+}
+
+
+
